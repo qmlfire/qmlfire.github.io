@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">Starter Code</a></li>
                     <li class="nav-item"><a class="nav-link" href="#!">Apply</a></li>
                 </ul>
@@ -55,8 +55,8 @@
                             </h1>
                             <p class="lead text-white italics mb-4">A First-year Innovation & Research Experience (FIRE) Stream at the University of Maryland, College Park</p>
                             <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
-                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#features">Get Started</a>
-                                <a class="btn btn-outline-light btn-lg px-4" href="#!">Learn More</a>
+                                <a class="btn btn-primary btn-lg px-4 me-sm-3" href="#!">Apply to Join</a>
+                                <a class="btn btn-outline-light btn-lg px-4" href="#about">Learn More</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@
         </header>
 
         <!-- Features section-->
-        <section class="py-5 border-bottom" id="features">
+        <section class="bg-light py-5" id="features">
             <div class="container px-5 my-5">
                 <div class="row gx-5">
                     <div class="col-lg-4 mb-5 mb-lg-0">
@@ -104,13 +104,51 @@
                 </div>
             </div>
         </section>
+
+        <div class="py-4" id="about">
+            <h1 class="display-5 fw-bolder text-black text-left mb-2 heading-font">Introduction</h1>
+            <h1 class="display-6 fw-bolder text-black text-left mb-2">What is Quantum Machine Learning?
+            </h1>
+            <p class="lead text-black mb-4"><i>Quantum Machine Learning (QML)</i> is a new research stream coming Fall 2022 to the FIRE program at the University of Maryland, College Park under the Technology & Applied Science cluster. 
+                Several existing courses at UMD cover the distinct fields of <a href="https://www.ibm.com/cloud/learn/machine-learning">machine learning (ML)</a> and <a href="https://www.ibm.com/topics/quantum-computing">quantum computing (QC)</a> independently, but the QML research
+                stream will be the first ever course at the university to introduce students to a burgeoning new space that is currently developing at the intersection of these fields: quantum machine learning.</p>
+                
+                <p class="lead text-black mb-4">The concept of performing ML on quantum hardware 
+                has long been a goal of computer scientists from both specialities, and bleeding-edge new cloud quantum computing technology like the <i>IBM Qismet<sup>TM</sup></sup></i> which we use in this course has finally provided the bridge between that dream and reality. 
+                The QML stream is your opportunity as a student to get ahead-of-the-curve access and insight into this exciting new technology and to get a chance to engage in hands-on exploration
+                of one of the most fascinating and dynamic new fields of computer science today.
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            </div>
+        </div>
+
+        <div class="py-4" id="structure">
+            <h1 class="display-6 fw-bolder text-black text-left mb-2">How is the stream structured?
+            </h1>
+            <p class="lead text-black mb-4">QML is a multi-semester research experience intended for first-year students. Students will spend their first 6-8 weeks in QML receiving primers on the fundamentals of both machine learning—
+                including material on data science, principles of artificial intelligence, deep learning, classification/regression problems, and the mathematics of machine learning—and quantum computing—including
+                a brief history of quantum computing, a theoretical explainer of the qubit, quantum information theory, and speculated impacts of QC over classical computers in fields such as cryptography and optimization.
+                This theory phase is intended to give you a strong foundational understanding of both fields independently, and will include discussion and brief exercises intended to foster basic familiarity
+                with both common machine learning toolkits <i>(sci-kit learn, tensorflow)</i> and our course's quantum computing provider, <i>IBM Qismet<sup>TM</sup></sup></i>. The remainder
+                of the stream will focus on proposing and completing independent projects based on the principles you have learned in the course, either alone or in a small group of students.
+            <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
+            </div>
+        </div>
+
         <!-- Pricing section-->
-        <section class="bg-light py-5 border-bottom">
-            <div class="container px-5 my-5">
-                <div class="text-center mb-5">
-                    <h2 class="fw-bolder">Pay as you grow</h2>
-                    <p class="lead mb-0">With our no hassle pricing plans</p>
+        <section class="bg-light py-5 ">
+            <div class="py-4" id="structure">
+                <h1 class="display-5 fw-bolder text-black text-left mb-2 heading-font">Starter Jupyter Notebooks</h1>
+
+                <p class="lead text-black mb-4">Students will spend their first 6-8 weeks in QML receiving primers on the fundamentals of both machine learning—
+                    including material on data science, principles of artificial intelligence, deep learning, classification/regression problems, and the mathematics of machine learning—and quantum computing—including
+                    a brief history of quantum computing, a theoretical explainer of the qubit, quantum information theory, and speculated impacts of QC over classical computers in fields such as cryptography and optimization.
+                    This theory phase is intended to give you a strong foundational understanding of both fields independently, and will include discussion and brief exercises intended to foster basic familiarity
+                    with both common machine learning toolkits <i>(sci-kit learn, tensorflow)</i> and our course's quantum computing provider, <i>IBM Qismet<sup>TM</sup></sup></i>. The remainder
+                    of the stream will focus on proposing and completing independent projects based on the principles you have learned in the course, either alone or in a small group of students.
+                <div class="d-grid gap-3 d-sm-flex justify-content-sm-center">
                 </div>
+            </div>
+            <div class="container px-5 my-5">
                 <div class="row gx-5 justify-content-center">
                     <!-- Pricing card free-->
                     <div class="col-lg-6 col-xl-4">
@@ -384,11 +422,11 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
+        <!-- <footer class="py-5 bg-dark">
             <div class="container px-5">
-                <p class="m-0 text-center text-white">Copyright &copy; Your Website 2022</p>
+                <p class="m-0 text-center text-white">Copyright &copy; QML 2022</p>
             </div>
-        </footer>
+        </footer> -->
     </div>
     </div>
 

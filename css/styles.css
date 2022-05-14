@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,300&family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=IBM+Plex+Serif&display=swap');
 /*!
 * Start Bootstrap - Business Frontpage v5.0.8 (https://startbootstrap.com/template/business-frontpage)
 * Copyright 2013-2022 Start Bootstrap
@@ -553,14 +553,18 @@ progress {
 }
 
 .display-6 {
-  font-size: calc(1.375rem + 1.5vw);
+  font-size: calc(0.5rem + 1.5vw);
   font-weight: 300;
   line-height: 1.2;
 }
 @media (min-width: 1200px) {
   .display-6 {
-    font-size: 2.5rem;
+    font-size: 1.5rem !important;
   }
+}
+
+.heading-font {
+  font-family: 'IBM Plex Serif', serif;
 }
 
 .list-unstyled {
@@ -7490,6 +7494,7 @@ textarea.form-control-lg {
 }
 
 .py-4 {
+  padding-left: 5rem !important;
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
@@ -11308,4 +11313,7 @@ textarea.form-control-lg {
 }
 .logo {
   width: 75%;
+}
+.a {
+  color: #02ee45;
 }
