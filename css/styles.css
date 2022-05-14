@@ -1,6 +1,5 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@300&family=Quantico&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,300;1,300&family=Quantico&display=swap');
 /*!
 * Start Bootstrap - Business Frontpage v5.0.8 (https://startbootstrap.com/template/business-frontpage)
 * Copyright 2013-2022 Start Bootstrap
@@ -78,9 +77,13 @@
   }
 }
 
+.italics {
+  font-style: italic;
+}
+
 body {
   margin: 0;
-  font-family: var(--bs-body-font-family);
+  font-family: 'Bitter', serif;
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
@@ -11302,4 +11305,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: center;
   width: 100%;
+}
+.logo {
+  width: 75%;
 }
