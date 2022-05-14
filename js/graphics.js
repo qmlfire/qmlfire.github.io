@@ -36,10 +36,18 @@ const shaderMaterial = new THREE.ShaderMaterial({
               vUv = uv;
 
               vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
-              gl_PointSize = 3.0;
+              // gl_PointSize = scale * (300.0 / - mvPosition.z);
+              gl_PointSize = abs(sin(uTime)) * vUv.x * 5.0;
               gl_Position = projectionMatrix * mvPosition;
-
+              
+              // gl_Position.x += sin(position.x + uTime) * 0.1;
+              // gl_Position.x += sin(uTime);
               gl_Position.y += tan(position.y + uTime) * 0.01;
+              // gl_Position.z += cos(position.z + uTime) * 0.1;
+
+              // gl_Position.x += tan(position.x + uTime) * 0.1;
+              // gl_Position.y += tan(position.y + uTime) * 0.1;
+              // gl_Position.z += tan(position.z + uTime) * 0.1;
             }
               `,
   fragmentShader: `
@@ -47,7 +55,7 @@ const shaderMaterial = new THREE.ShaderMaterial({
 
             varying vec2 vUv;
             uniform float uTime;
-            vec3 colorA = vec3(0.008,0.933,0.604);
+            vec3 colorA = vec3(0.937,0.859,0.);
             vec3 colorB = vec3(0.008,0.933,0.145);
 
 
@@ -72,12 +80,13 @@ const sizes = {
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);
-camera.position.z = 5;
+camera.position.z = 10;
 scene.add(camera);
 
 // Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
+controls.enableZoom = false;
 
 // Renderer
 const renderer = new THREE.WebGLRenderer({
