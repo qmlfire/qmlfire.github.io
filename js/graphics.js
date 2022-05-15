@@ -43,7 +43,7 @@ const shaderMaterial = new THREE.ShaderMaterial({
 
               vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
               // gl_PointSize = scale * (300.0 / - mvPosition.z);
-              gl_PointSize = abs(sin(uTime)) * 5.0;
+              gl_PointSize = abs(sin(uTime)) * vUv.x * 4.0;
               gl_Position = projectionMatrix * mvPosition;
               
               // gl_Position.x += sin(position.x + uTime) * 0.1;
