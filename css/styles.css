@@ -11345,3 +11345,44 @@ body {
 .webgl {
   z-index: -1;
 }
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.profile {
+  border-radius: 50%;
+  bottom: 50%;
+  max-width: 150px;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+.bio {
+  align-items: center;
+  width: 20%;
+}
+.name {
+  padding-top: 10%;
+  color: #000;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.bio-row {
+  display: flex;
+  align-items: center;
+}
+.company {
+  max-width: 150px;
+}
+.company-div {
+  padding-right: 5%;
+}
+
+.company-row {
+  display: flex;
+  align-items: center;
+  padding-bottom: 3%;
+}
+
+.footer {
+  padding-top: 1%;
+}
