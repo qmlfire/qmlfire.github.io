@@ -1,6 +1,12 @@
 import * as THREE from "https://cdn.skypack.dev/three@0.133.1/build/three.module";
 import { OrbitControls } from "https://cdn.skypack.dev/three@0.133.1/examples/jsm/controls/OrbitControls";
 
+// var one = document.getElementById("canvas_wrapper");
+// var two = document.getElementById("3d");
+// style = window.getComputedStyle(one);
+// wdt = style.getPropertyValue('width');
+// two.style.width = wdt;
+
 // Canvas
 const canvas = document.querySelector("canvas.webgl");
 
@@ -37,7 +43,7 @@ const shaderMaterial = new THREE.ShaderMaterial({
 
               vec4 mvPosition = modelViewMatrix * vec4(position, 1.0);
               // gl_PointSize = scale * (300.0 / - mvPosition.z);
-              gl_PointSize = abs(sin(uTime)) * vUv.x * 5.0;
+              gl_PointSize = abs(sin(uTime)) * 5.0;
               gl_Position = projectionMatrix * mvPosition;
               
               // gl_Position.x += sin(position.x + uTime) * 0.1;
@@ -77,6 +83,11 @@ const sizes = {
   width: window.innerWidth,
   height: window.innerHeight
 };
+
+
+var overlay = document.getElementById("overlay");
+overlay.style.width = sizes.width;
+console.log(overlay.style.width)
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, sizes.width / sizes.height);

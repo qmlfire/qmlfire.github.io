@@ -565,6 +565,8 @@ progress {
 
 .heading-font {
   font-family: 'IBM Plex Serif', serif;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1%;
 }
 
 .list-unstyled {
@@ -7494,9 +7496,12 @@ textarea.form-control-lg {
 }
 
 .py-4 {
-  padding-left: 5rem !important;
+  align-items: center;
+  justify-content: center;
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
 }
 
 .py-5 {
@@ -7770,6 +7775,18 @@ textarea.form-control-lg {
 .text-white {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-green {
+  color: #ffffff;
+  text-shadow:
+    0 0 7px #008d0d,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #008d0d,
+    0 0 82px #008d0d,
+    0 0 92px #008d0d,
+    0 0 151px #008d0d;
 }
 
 .text-body {
@@ -11304,6 +11321,7 @@ textarea.form-control-lg {
 }
 #canvas_wrapper {
   position: relative;
+  width: 100%;
 }
 #canvas_wrapper canvas, #overlay {
   position: absolute;
@@ -11314,6 +11332,15 @@ textarea.form-control-lg {
 .logo {
   width: 75%;
 }
-.a {
-  color: #02ee45;
+a {
+  color: #008d0d;
+  font-weight: bold;
+  text-decoration: none !important;
+}
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+.webgl {
+  z-index: -1;
 }
